@@ -125,8 +125,13 @@
 }
 
 .portafolio img {
-  width: 3em;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
 
 /* forkCommit */
 

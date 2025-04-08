@@ -1,0 +1,148 @@
+/* HEADER */
+.menus {
+  border: solid 1px;
+  background-color: black;
+}
+.menus div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px gray;
+  gap: 15px;
+}
+
+.menus a {
+  width: 120px;
+  padding: 2px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+/*abajo de 700 pixeles todo ocupara 1 columna muy importante para los telefonos*/
+@media (max-width: 700px) {
+  .menus div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botones {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .informacion {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .informacion h1 {
+    text-align: center;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .informacion img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+.informacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* es muy importante para hacer una sola linea con los telefonos oh monitores pequeños*/
+  padding: 2em;
+  background-color: white;
+  gap: 2em;
+}
+.informacion h1 {
+  text-align: end;
+  font-size: 3.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.informacion img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* MAIN */
+#fondo {
+  background-color: rgb(234, 236, 236);
+  border: solid 1px beige;
+}
+.titulo {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.titulo h1 {
+  margin-top: 0%;
+}
+
+/*FOOTER*/
+.footers {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.footers p {
+  font-size: 0.7em;
+  text-align: end;
+}
+.footers h6 {
+  font-size: 0.6em;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* PORTAFOLIO */
+.portafolio div {
+  display: flex;
+  justify-content: center;
+}
+.portafolio th {
+  width: 200px;
+}
+
+.portafolio img {
+  width: 3em;
+}
+
+/* forkCommit */
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* me ayudara a centrar las imagenes */
+  gap: 2em;
+  padding: 2em;
+  background-color: #f9f9f9;
+}
+
+.imagenes img {
+  width: auto; /* en auto va a guardar el tamaño original */
+  max-width: 100%; /* nos ayudara a que no se salga de la pantalla  */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
